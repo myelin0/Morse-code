@@ -35,5 +35,4 @@ def decode_message(_str)
   end
   output.join(' ').gsub(/\s+/, ' ')
 end
-
 puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
