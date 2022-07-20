@@ -26,7 +26,7 @@ end
 puts decode_word('-- -.--')
 
 # Decoding a message
-def decode_message(str)
+def decode_message(_str)
   output = []
   string
     .split('   ')
