@@ -24,3 +24,16 @@ def decode_word(string)
 end
 
 puts decode_word('-- -.--')
+
+# Decoding a message
+def decode_message(str)
+  output = []
+  string
+    .split('   ')
+    .each do |i|
+    output.push(decode_word(i))
+  end
+  output.join(' ').gsub(/\s+/, ' ')
+end
+
+puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
