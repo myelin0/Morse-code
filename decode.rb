@@ -10,7 +10,7 @@ def decode_char(string)
   @decoder_letters.fetch(string)
 end
 
-puts decode_char('.-')
+p decode_char('.-')
 
 # Method to decode the word
 def decode_word(string)
@@ -23,10 +23,10 @@ def decode_word(string)
   output
 end
 
-puts decode_word('-- -.--')
+p decode_word('-- -.--')
 
 # Decoding a message
-def decode_message(_str)
+def decode_message(string)
   output = []
   string
     .split('   ')
@@ -35,4 +35,5 @@ def decode_message(_str)
   end
   output.join(' ').gsub(/\s+/, ' ')
 end
-puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+
+p decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
