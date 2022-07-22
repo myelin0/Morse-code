@@ -11,4 +11,9 @@ module MyEnumerable
     compute
   end
 
+  def filter
+    arr = []
+    each { |n| arr.push(n) if yield n }
+    arr
+  end
 end
